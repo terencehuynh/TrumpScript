@@ -32,6 +32,8 @@ T_Question = 51
 T_Print = 52
 T_While = 53
 
+T_Remainder = 60
+
 # Error messages
 ERROR_CODES = {
     # For quotes that didn't get terminated

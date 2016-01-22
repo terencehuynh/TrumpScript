@@ -143,6 +143,9 @@ class Tokenizer:
                     elif word == "more" or word == "greater" or word == "larger":
                         tokens.append(Tokenizer.toke(T_Greater, None, line))
 
+                    elif word == "%" or word == "leftover":
+                        tokens.append(Tokenizer.toke(T_Remainder, None, line))
+
                     # Otherwise, it's just a word, interpreting is the lexer's job
                     else:
                         tokens.append(Tokenizer.toke(T_Word, word, line))
